@@ -1,0 +1,35 @@
+@import "@/app/_mixins.scss";
+
+.portfolio {
+  position: relative;
+
+  .portfolio__progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: var(--second-color);
+    font-size: clamp(0.875rem, 0.25rem + 3.125vw, 2.25rem);
+    z-index: 1;
+
+    .portfolio__title {
+      font-size: clamp(1.5rem, 0.818rem + 3.409vw, 3rem);
+      text-align: end;
+      padding: 8px;
+
+      @include mobile {
+        text-align: center;
+        padding: 4px;
+      }
+    }
+
+    .portfolio__progress-bar {
+      height: 10px;
+      background-color: white;
+
+      @include mobile {
+        height: 5px;
+      }
+    }
+  }
+}

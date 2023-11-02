@@ -1,0 +1,72 @@
+export const socialItems = [
+  // {
+  //   id: 1,
+  //   url: "https://www.linkedin.com/in/volodymir-kavun/",
+  //   // icon: "/facebook.png",
+  //   icon: "/linkedin.webp",
+  //   alt: "Linkedin",
+  // },
+  {
+    id: 1,
+    url: "https://www.linkedin.com/in/volodymir-kavun/",
+    // icon: "/facebook.png",
+    icon: "/social_icons/icon_linkedin.svg",
+    alt: "Linkedin",
+  },
+  // {
+  //   id: 2,
+  //   url: "https://www.instagram.com/___volod_mir___/",
+  //   // icon: "/instagram.png",
+  //   url: "https://github.com/VolodymyrKavun",
+  //   icon: "/github_logo.webp",
+  //   alt: "GitHub",
+  // },
+  {
+    id: 2,
+    url: "https://www.instagram.com/___volod_mir___/",
+    // icon: "/instagram.png",
+    url: "https://github.com/VolodymyrKavun",
+    icon: "/social_icons/icon_github.svg",
+    alt: "GitHub",
+  },
+  // {
+  //   id: 3,
+  //   url: "https://t.me/Volod_mirr",
+  //   icon: "/telegram.webp",
+  //   alt: "Telegram",
+  // },
+  {
+    id: 3,
+    url: "https://t.me/Volod_mirr",
+    icon: "/social_icons/icon_telegram.svg",
+    alt: "Telegram",
+  },
+  // {
+  //   id: 4,
+  //   icon: "/instagram_new.webp",
+  //   alt: "Instagram",
+  // },
+  {
+    id: 4,
+    icon: "/social_icons/icon_instagram.svg",
+    alt: "Instagram",
+  },
+  // {
+  //   id: 5,
+  //   url: "https://www.facebook.com/profile.php?id=100020119037264",
+  //   icon: "/facebook_new.webp",
+  //   alt: "Facebook",
+  // },
+  {
+    id: 5,
+    url: "https://www.facebook.com/profile.php?id=100020119037264",
+    icon: "/social_icons/icon_facebook.svg",
+    alt: "Facebook",
+  },
+  {
+    id: 6,
+    url: "mailto:volodymirkavun1@gmail.com",
+    icon: "/social_icons/icon_gmail.svg",
+    alt: "Gmail",
+  },
+];

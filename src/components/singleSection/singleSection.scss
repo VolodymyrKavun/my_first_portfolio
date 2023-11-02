@@ -1,0 +1,93 @@
+@import "@/app/_mixins.scss";
+
+.single-section {
+  max-width: 1024px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.25rem, 0.398rem + 4.261vw, 3.125rem);
+  padding: 50px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .single-section__wrapper-img {
+    position: relative;
+    width: clamp(25rem, 16.477rem + 42.614vw, 43.75rem);
+    height: clamp(9.375rem, 5.114rem + 21.307vw, 18.75rem);
+
+    .single-section__image {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.single-section__text--container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+
+  @include mobile {
+    transform: none !important;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .single-section__text--title {
+    font-size: clamp(1.5rem, 0.818rem + 3.409vw, 3rem);
+  }
+
+  .single-section__text--description {
+    color: gray;
+    font-size: clamp(0.75rem, 0.523rem + 1.136vw, 1.25rem);
+  }
+
+  .single-section__buttons--wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    @include mobile {
+      justify-content: space-evenly;
+    }
+
+    .single-section__buttons--link {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid var(--second-color);
+      color: var(--main-color);
+      border-radius: 10px;
+      padding: clamp(0.5rem, 0.216rem + 1.42vw, 1.125rem);
+      width: 200px;
+      cursor: pointer;
+      text-align: center;
+      font-size: clamp(0.75rem, 0.58rem + 0.852vw, 1.125rem);
+
+      &:hover {
+        color: var(--second-color);
+      }
+
+      &:hover > .single-section__buttons--img {
+        filter: brightness(0) saturate(100%) invert(77%) sepia(43%)
+          saturate(1901%) hue-rotate(348deg) brightness(103%) contrast(99%);
+      }
+
+      @include mobile {
+        background-color: transparent;
+        border: 1px solid var(--second-color);
+        color: var(--second-color);
+      }
+    }
+  }
+}

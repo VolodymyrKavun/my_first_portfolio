@@ -1,0 +1,44 @@
+@import "@/app/_mixins.scss";
+
+.navbar {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  gap: 32px;
+  z-index: 10;
+
+  @include mobile {
+    position: relative;
+    justify-content: center;
+    height: 50px;
+  }
+
+  @include tablet {
+    padding: 0px 24px;
+    height: 70px;
+  }
+
+  @include desktopSmall {
+    padding: 0px 24px;
+  }
+
+  .navbar__logo--wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+    @include mobile {
+      width: 70px;
+      height: 70px;
+    }
+
+    @include tablet {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}

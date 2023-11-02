@@ -1,0 +1,66 @@
+@import "@/app/_mixins.scss";
+
+.parallax {
+  width: 100%;
+  // height: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @include mobile {
+    height: calc(100vh - 50px);
+  }
+
+  .titleParralaxFirst {
+    font-size: clamp(3.5rem, 2.583rem + 4.583vw, 6.25rem);
+
+    @include mobile {
+      // font-size: 56px;
+      text-align: center;
+    }
+  }
+
+  .mountains {
+    background-image: url("/parallax/mountains.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+
+    @include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .planets {
+    background-image: url("/parallax/planets.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+
+    @include mobile {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 80%;
+    }
+  }
+
+  .stars {
+    background-image: url("/parallax/stars.png");
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+}

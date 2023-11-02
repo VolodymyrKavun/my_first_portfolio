@@ -1,0 +1,32 @@
+@import "@/app/_mixins.scss";
+
+.visible {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  display: block;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  bottom: 50px;
+  right: 8px;
+  transition-duration: 500ms;
+
+  &:hover {
+    transform: translateY(-0.4rem);
+  }
+
+  @include mobile {
+    bottom: 60px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .visible__icon {
+    transform: rotate(-90deg);
+  }
+}
+
+.not-visible {
+  display: none;
+}
