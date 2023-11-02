@@ -16,8 +16,13 @@
 
   .single-section__wrapper-img {
     position: relative;
-    width: clamp(25rem, 16.477rem + 42.614vw, 43.75rem);
-    height: clamp(9.375rem, 5.114rem + 21.307vw, 18.75rem);
+    width: 800px;
+    height: 350px;
+
+    @include mobile {
+      width: 300px;
+      height: 170px;
+    }
 
     .single-section__image {
       object-fit: contain;

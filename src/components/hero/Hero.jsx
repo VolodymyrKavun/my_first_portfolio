@@ -39,7 +39,7 @@ const Hero = () => {
         animate="animate"
       >
         <motion.h1 variants={textVariants} className="hero__title--main">
-          Hello! I`m Volodymyr Kavun
+          Volodymyr Kavun
         </motion.h1>
         <motion.h2 variants={textVariants} className="hero__title--second">
           Front-End Developer

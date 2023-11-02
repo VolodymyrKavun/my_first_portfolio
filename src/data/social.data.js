@@ -48,6 +48,7 @@ export const socialItems = [
   // },
   {
     id: 4,
+    url: "https://instagram.com/___volod_mir___?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
     icon: "/social_icons/icon_instagram.svg",
     alt: "Instagram",
   },

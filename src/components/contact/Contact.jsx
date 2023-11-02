@@ -2,7 +2,7 @@
 import "./contact.scss";
 import { motion } from "framer-motion";
 // import { contactData } from "@/data/contact.data";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import { showError, showSuccess } from "@/utils/toast/ToastMessage";
@@ -40,7 +40,8 @@ const Contact = () => {
 
   // const isInView = useInView(ref, { margin: "-100px" });
 
-  // function sending message
+  // ! function sending message
+
   const sendEmail = (e) => {
     e.preventDefault();
 
