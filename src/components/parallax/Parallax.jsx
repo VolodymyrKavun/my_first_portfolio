@@ -16,7 +16,7 @@ const Parallax = ({ type }) => {
 
   return (
     <section
-      id={type === "aboutMe" ? "About Me" : "Portfolio"}
+      id={type === "aboutMe" ? "aboutMe" : "portfolio"}
       className="parallax"
       ref={ref}
       style={{
@@ -26,9 +26,9 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
-      <motion.h2 style={{ y: yText }} className="titleParralaxFirst">
+      <motion.h3 style={{ y: yText }} className="titleParralaxFirst">
         {type === "aboutMe" ? "About Me" : "Portfolio"}
-      </motion.h2>
+      </motion.h3>
       <motion.div className="mountains"></motion.div>
       <motion.div
         style={{

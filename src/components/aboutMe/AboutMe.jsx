@@ -45,12 +45,12 @@ const AboutMe = () => {
       </motion.div>
       <div className="about-me__container">
         <motion.div className="about-me__info-container" variants={variants}>
-          <motion.h3
+          <motion.h4
             className="about-me__info-container--title"
             whileHover={{ color: "var(--second-color)" }}
           >
             Like working in a team!
-          </motion.h3>
+          </motion.h4>
           <p className="about-me__info-container--text">
             ⚡ In addition to working on projects, I always strive to improve my
             skills and stay updated with the latest trends in web development. I
@@ -74,12 +74,12 @@ const AboutMe = () => {
           </figure>
         </motion.div>
         <motion.div div className="about-me__skills" variants={variants}>
-          <motion.h3
+          <motion.h4
             className="about-me__skills--title"
             whileHover={{ color: "var(--second-color)" }}
           >
             My skills
-          </motion.h3>
+          </motion.h4>
           <ul className="about-me__skills--list">
             {aboutMeData.map((item) => (
               <li key={item.id} className="about-me__skills--item">

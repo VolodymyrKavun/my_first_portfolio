@@ -94,7 +94,7 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
-      <Link href="/" className="navbar__logo--wrapper">
+      <Link href="/" className="navbar__logo--wrapper" title="Link to Home">
         <Image
           src={"/logo-no-background.svg"}
           alt="Logo"

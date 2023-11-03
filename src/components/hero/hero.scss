@@ -33,12 +33,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 24px;
 
     @include mobile {
       width: 100%;
       height: 100%;
-      gap: 10px;
+      gap: 32px;
       align-items: center;
       text-align: center;
     }
@@ -107,7 +107,7 @@
 
       @include mobile {
         padding: 10px;
-        margin-right: 110px;
+        margin-right: 130px;
         margin-top: -8px;
       }
 

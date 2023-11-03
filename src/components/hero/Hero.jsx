@@ -31,7 +31,7 @@ const textVariants = {
 
 const Hero = () => {
   return (
-    <section id="Home" className="hero">
+    <section id="home" className="hero">
       <motion.div
         className="hero__text--container"
         variants={textVariants}
@@ -52,7 +52,7 @@ const Hero = () => {
           animate="scrollButton"
           className="hero__scroll-icon-wrapper"
         >
-          <Link href="#About Me">
+          <Link href="#aboutMe">
             <Image
               src={"/scroll.png"}
               alt="Scroll down"

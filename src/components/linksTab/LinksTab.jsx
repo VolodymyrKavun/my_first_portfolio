@@ -26,11 +26,15 @@ const LinksTab = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <a href={`#${item.title}`} className="links-tab__item--link">
+          <a
+            href={`#${item.link}`}
+            className="links-tab__item--link"
+            title={item.alt}
+          >
             <figure className="links-tab__item--icon-wrap">
               <Image
                 src={item.icon}
-                alt={item.title}
+                alt={item.alt}
                 fill={true}
                 className="links-tab__item--icon"
                 loading="lazy"

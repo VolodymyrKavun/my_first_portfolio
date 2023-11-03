@@ -11,7 +11,7 @@ export const socialItems = [
     url: "https://www.linkedin.com/in/volodymir-kavun/",
     // icon: "/facebook.png",
     icon: "/social_icons/icon_linkedin.svg",
-    alt: "Linkedin",
+    alt: "Link to the Linkedin",
   },
   // {
   //   id: 2,
@@ -27,7 +27,7 @@ export const socialItems = [
     // icon: "/instagram.png",
     url: "https://github.com/VolodymyrKavun",
     icon: "/social_icons/icon_github.svg",
-    alt: "GitHub",
+    alt: "Link to the GitHub",
   },
   // {
   //   id: 3,
@@ -39,7 +39,7 @@ export const socialItems = [
     id: 3,
     url: "https://t.me/Volod_mirr",
     icon: "/social_icons/icon_telegram.svg",
-    alt: "Telegram",
+    alt: "Link to the Telegram",
   },
   // {
   //   id: 4,
@@ -50,7 +50,7 @@ export const socialItems = [
     id: 4,
     url: "https://instagram.com/___volod_mir___?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
     icon: "/social_icons/icon_instagram.svg",
-    alt: "Instagram",
+    alt: "Link to the Instagram",
   },
   // {
   //   id: 5,
@@ -62,12 +62,12 @@ export const socialItems = [
     id: 5,
     url: "https://www.facebook.com/profile.php?id=100020119037264",
     icon: "/social_icons/icon_facebook.svg",
-    alt: "Facebook",
+    alt: "Link to the Facebook",
   },
   {
     id: 6,
     url: "mailto:volodymirkavun1@gmail.com",
     icon: "/social_icons/icon_gmail.svg",
-    alt: "Gmail",
+    alt: "Link to the Gmail",
   },
 ];

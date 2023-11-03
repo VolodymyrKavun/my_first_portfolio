@@ -25,7 +25,12 @@ const SocialLinks = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <a href={item.url} target="_blank" rel="noopener noreferrer">
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={item.alt}
+          >
             <Image
               src={item.icon}
               alt={item.alt}

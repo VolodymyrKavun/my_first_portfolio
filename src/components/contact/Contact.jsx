@@ -68,7 +68,7 @@ const Contact = () => {
 
   return (
     <motion.section
-      id="Contact"
+      id="contact"
       ref={contactRef}
       className="contact"
       variants={variants}

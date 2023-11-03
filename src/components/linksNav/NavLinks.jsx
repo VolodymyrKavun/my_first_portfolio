@@ -50,7 +50,9 @@ const NavLinks = () => {
           whileTap={{ scale: 0.9 }}
           className="nav-links__item"
         >
-          <a href={`#${item.title}`}>{item.title}</a>
+          <a href={`#${item.link}`} title={item.alt}>
+            {item.title}
+          </a>
         </motion.li>
       ))}
     </motion.ul>

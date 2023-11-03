@@ -28,7 +28,7 @@ const SingleSection = ({ item }) => {
         />
       </figure>
       <motion.div className="single-section__text--container" style={{ y: y }}>
-        <h3 className="single-section__text--title">{item.title}</h3>
+        <h5 className="single-section__text--title">{item.title}</h5>
         <p className="single-section__text--description">{item.description}</p>
         <figure className="single-section__buttons--wrapper">
           <a
@@ -36,16 +36,17 @@ const SingleSection = ({ item }) => {
             className="single-section__buttons--link"
             target="_blank"
             rel="noopener noreferrer"
+            title="Website link"
           >
             <span>Visit Website</span>
             <Image
               src={"/icon_external-link.svg"}
-              alt="Website link"
+              alt="Website link icon"
               width={24}
               height={24}
               className="single-section__buttons--img"
               loading="lazy"
-              title="Website link"
+              title="Website link icon"
             />
           </a>
           <a
@@ -53,16 +54,17 @@ const SingleSection = ({ item }) => {
             className="single-section__buttons--link"
             target="_blank"
             rel="noopener noreferrer"
+            title="Source code link"
           >
             <span>Source Code</span>
             <Image
               src={"/icon_github-link.svg"}
-              alt="GitHub code link"
+              alt="GitHub code link icon"
               width={24}
               height={24}
               className="single-section__buttons--img"
               loading="lazy"
-              title="GitHub code link"
+              title="GitHub code link icon"
             />
           </a>
         </figure>

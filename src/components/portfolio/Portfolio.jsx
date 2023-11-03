@@ -21,7 +21,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="portfolio__progress">
-        <h3 className="portfolio__title">Featured Works</h3>
+        <h4 className="portfolio__title">Featured Works</h4>
         <motion.div
           style={{ scaleX: scaleX }}
           className="portfolio__progress-bar"
