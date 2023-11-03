@@ -37,14 +37,17 @@ const AboutMe = () => {
       // animate={isInView ? "animate" : "initial"}
       animate={isInView && "animate"}
     >
-      <motion.div className="about-me__expression" variants={variants}>
+      <motion.article className="about-me__expression" variants={variants}>
         <p className="about-me__expression--text">
           My focus is to constantly develop <br /> and move forward
         </p>
         <hr className="about-me__expression--line" />
-      </motion.div>
-      <div className="about-me__container">
-        <motion.div className="about-me__info-container" variants={variants}>
+      </motion.article>
+      <section className="about-me__container">
+        <motion.article
+          className="about-me__info-container"
+          variants={variants}
+        >
           <motion.h4
             className="about-me__info-container--title"
             whileHover={{ color: "var(--second-color)" }}
@@ -72,8 +75,8 @@ const AboutMe = () => {
               title="Working team"
             />
           </figure>
-        </motion.div>
-        <motion.div div className="about-me__skills" variants={variants}>
+        </motion.article>
+        <motion.article div className="about-me__skills" variants={variants}>
           <motion.h4
             className="about-me__skills--title"
             whileHover={{ color: "var(--second-color)" }}
@@ -102,71 +105,10 @@ const AboutMe = () => {
               </li>
             ))}
           </ul>
-        </motion.div>
-      </div>
+        </motion.article>
+      </section>
     </motion.section>
   );
 };
 
 export default AboutMe;
-
-// ! before
-
-//  <motion.div
-//       className="services"
-//       variants={variants}
-//       initial="initial"
-//       // whileInView="animate"
-//       ref={ref}
-//       // animate={isInView ? "animate" : "initial"}
-//       animate={isInView && "animate"}
-//     >
-//       <motion.div className="textContainer" variants={variants}>
-//         <p className="textExpressionServices">
-//           My focus is to constantly develop <br /> and move forward
-//         </p>
-//         <hr className="lineExpressionServices" />
-//       </motion.div>
-//       <motion.div className="titleContainer" variants={variants}>
-//         <div className="title">
-//           <div className="imgWrapper">
-//             <Image
-//               src={"/people.webp"}
-//               alt="People Services"
-//               fill={true}
-//               className="img"
-//             />
-//           </div>
-//           <h1 className="titleServices">
-//             <motion.b whileHover={{ color: "var(--second-color)" }}>
-//               Unique
-//             </motion.b>{" "}
-//             Ideas
-//           </h1>
-//         </div>
-//         <div className="title">
-//           <h1 className="titleServices">
-//             <motion.b whileHover={{ color: "var(--second-color)" }}>
-//               For You
-//             </motion.b>{" "}
-//             Business.
-//           </h1>
-//           <button className="buttonServices">WHAT WE DO?</button>
-//         </div>
-//       </motion.div>
-//       <motion.div div className="listContainer" variants={variants}>
-//         <ul className="list">
-//           {servicesData.map((item) => (
-//             <motion.li
-//               className="box"
-//               key={item.id}
-//               whileHover={{ backgroundColor: "lightgray", color: "black" }}
-//             >
-//               <h2 className="itemTitleServices">{item.title}</h2>
-//               <p className="itemDescriptionServices">{item.description}</p>
-//               <button className="buttonListContainer">Go</button>
-//             </motion.li>
-//           ))}
-//         </ul>
-//       </motion.div>
-//     </motion.div>

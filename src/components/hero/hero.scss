@@ -9,6 +9,31 @@
 // }
 
 .hero {
+  // background: linear-gradient(
+  //   180deg,
+  //   var(--main-bg-color),
+  //   var(--main-bg-color)
+  // );
+  // height: 100vh;
+  // overflow: hidden;
+  // display: flex;
+  // align-items: center;
+  // max-width: 1024px;
+  // margin: auto;
+  // ! WK
+
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--main-bg-color)),
+    to(var(--main-bg-color))
+  );
+  background: -o-linear-gradient(
+    top,
+    var(--main-bg-color),
+    var(--main-bg-color)
+  );
   background: linear-gradient(
     180deg,
     var(--main-bg-color),
@@ -16,22 +41,49 @@
   );
   height: 100vh;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   max-width: 1024px;
   margin: auto;
 
   @include mobile {
+    // height: calc(100vh - 100px);
+    // flex-direction: column;
+    // padding-bottom: 8px;
+
+    // ! WK
     height: calc(100vh - 100px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding-bottom: 8px;
   }
 
   .hero__text--container {
+    // width: 100%;
+    // height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // gap: 32px;
+
+    // ! WK
     width: 100%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: 32px;
 
@@ -39,6 +91,12 @@
       width: 100%;
       height: 100%;
       // gap: 32px;
+      // align-items: center;
+      // text-align: center;
+
+      // !WK
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       text-align: center;
     }
@@ -75,15 +133,27 @@
       .hero__scroll-icon--img {
         width: 100%;
         height: 100%;
+        -o-object-fit: contain;
         object-fit: contain;
       }
     }
   }
 
   .hero__img-container {
+    // position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // !WK
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     // height: 100%;
     width: 700px;
@@ -129,6 +199,7 @@
     .hero__img-container--image {
       width: 100%;
       height: 100%;
+      -o-object-fit: contain;
       object-fit: contain;
       -webkit-filter: drop-shadow(3px 5px 5px var(--second-color));
       filter: drop-shadow(3px 5px 5px var(--second-color));

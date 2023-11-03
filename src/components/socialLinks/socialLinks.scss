@@ -1,7 +1,12 @@
 @import "@/app/_mixins.scss";
 
 .social-links {
+  // display: flex;
+  // !WK
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
   gap: 20px;
 
   .social-links__img--wrapper {

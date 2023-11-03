@@ -15,8 +15,13 @@
 
   .footer__text {
     @include mobile {
-      float: right;
+      // transform: rotate(90deg);
+      // !WK
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
       transform: rotate(90deg);
+
+      float: right;
       width: 196%;
     }
   }

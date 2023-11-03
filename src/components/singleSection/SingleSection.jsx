@@ -24,7 +24,10 @@ const SingleSection = ({ item }) => {
           title={`Image ${item.title}`}
         />
       </figure>
-      <motion.div className="single-section__text--container" style={{ y: y }}>
+      <motion.article
+        className="single-section__text--container"
+        style={{ y: y }}
+      >
         <h5 className="single-section__text--title">{item.title}</h5>
         <p className="single-section__text--description">{item.description}</p>
         <figure className="single-section__buttons--wrapper">
@@ -65,7 +68,7 @@ const SingleSection = ({ item }) => {
             />
           </a>
         </figure>
-      </motion.div>
+      </motion.article>
     </article>
   );
 };

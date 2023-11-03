@@ -7,7 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Volodymyr Kavun Portfolio",
-  description: "Front-end developer portfolio",
+  description:
+    "Portfolio of front-end developer Volodymyr Kavun. Next.js, React, SEO.",
+  alternates: {
+    canonical: process.env.BASE_URL,
+  },
 };
 
 export default function RootLayout({ children }) {

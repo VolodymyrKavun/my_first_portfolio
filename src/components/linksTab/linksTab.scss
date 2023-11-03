@@ -7,8 +7,17 @@
   z-index: 5;
   background-color: rebeccapurple;
   width: 100%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-around;
+  // !WK
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 
   @include desktopLarge {
@@ -17,19 +26,37 @@
 
   .links-tab__item {
     border: 1px solid #0c0c1d;
+    // display: flex;
+    // align-items: center;
+    // !WK
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    // flex-direction: column;
-    // justify-content: center;
+
     width: 100%;
     height: 100%;
 
     .links-tab__item--link {
       width: 100%;
       height: 100%;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // !WK
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+
       gap: 4px;
       padding: 4px;
     }
@@ -40,6 +67,11 @@
       height: 24px;
 
       .links-tab__item--icon {
+        // filter: invert(97%) sepia(2%) saturate(26%) hue-rotate(314deg)
+        //   brightness(92%) contrast(83%);
+        // !WK
+        -webkit-filter: invert(97%) sepia(2%) saturate(26%) hue-rotate(314deg)
+          brightness(92%) contrast(83%);
         filter: invert(97%) sepia(2%) saturate(26%) hue-rotate(314deg)
           brightness(92%) contrast(83%);
       }

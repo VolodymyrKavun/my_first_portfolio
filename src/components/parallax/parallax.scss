@@ -5,16 +5,26 @@
   // height: 100%;
   height: 100vh;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // !WK
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
   @include mobile {
     height: calc(100vh - 50px);
   }
 
-  .titleParralaxFirst {
+  .parallax__title {
     font-size: clamp(3.5rem, 2.583rem + 4.583vw, 6.25rem);
 
     @include mobile {
@@ -23,7 +33,7 @@
     }
   }
 
-  .mountains {
+  .parallax__mountains {
     background-image: url("/parallax/mountains.png");
     background-size: cover;
     background-position: bottom;
@@ -38,7 +48,7 @@
     }
   }
 
-  .planets {
+  .parallax__planets {
     background-image: url("/parallax/planets.png");
     background-size: cover;
     background-position: bottom;
@@ -54,7 +64,7 @@
     }
   }
 
-  .stars {
+  .parallax__stars {
     background-image: url("/parallax/stars.png");
     background-size: cover;
     background-position: bottom;

@@ -20,13 +20,13 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio" ref={ref}>
-      <div className="portfolio__progress">
+      <article className="portfolio__progress">
         <h4 className="portfolio__title">Featured Works</h4>
         <motion.div
           style={{ scaleX: scaleX }}
           className="portfolio__progress-bar"
         ></motion.div>
-      </div>
+      </article>
       <ul>
         {portfolioData.map((item) => (
           <li key={item.id}>
