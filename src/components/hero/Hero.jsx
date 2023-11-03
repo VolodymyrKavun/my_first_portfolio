@@ -15,7 +15,7 @@ const textVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 1,
+      duration: 0.5,
       staggerChildren: 0.1,
     },
   },
@@ -60,6 +60,7 @@ const Hero = () => {
               className="hero__scroll-icon--img"
               loading="lazy"
               title="Button scroll down"
+              sizes="(min-width: 1300px) 50px, (min-width: 780px) 30px, 24px"
             />
           </Link>
         </motion.figure>
@@ -82,6 +83,7 @@ const Hero = () => {
           fill={true}
           loading="lazy"
           title="Image hero"
+          sizes="(min-width: 780px) 411px, 320px"
         />
       </figure>
     </section>

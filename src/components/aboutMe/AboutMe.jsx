@@ -73,6 +73,7 @@ const AboutMe = () => {
               className="about-me__info-container--img"
               loading="lazy"
               title="Working team"
+              sizes="(min-width: 1040px) 300px, (min-width: 780px) 250px, 200px"
             />
           </figure>
         </motion.article>

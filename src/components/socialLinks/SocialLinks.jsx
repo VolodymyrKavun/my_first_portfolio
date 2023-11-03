@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { socialItems } from "@/data/social.data";
 
 const socialsVariants = {
-  visible: (index) => ({ opacity: 1, transition: { delay: index * 0.5 } }),
+  visible: (index) => ({ opacity: 1, transition: { delay: index * 0.2 } }),
   hidden: { opacity: 0 },
 };
 

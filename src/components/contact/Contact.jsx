@@ -101,6 +101,7 @@ const Contact = () => {
             className="contact__text--icon"
             loading="lazy"
             title="Look to the right"
+            sizes="50px"
           />
         </motion.figure>
       </article>

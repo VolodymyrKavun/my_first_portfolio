@@ -22,6 +22,7 @@ const SingleSection = ({ item }) => {
           className="single-section__image"
           loading="lazy"
           title={`Image ${item.title}`}
+          sizes="(min-width: 1000px) 397px, (min-width: 780px) calc(88vw - 466px), 300px"
         />
       </figure>
       <motion.article
