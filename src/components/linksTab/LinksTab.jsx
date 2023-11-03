@@ -26,8 +26,8 @@ const LinksTab = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <figure className="links-tab__item--icon-wrap">
-            <a href={`#${item.title}`}>
+          <a href={`#${item.title}`} className="links-tab__item--link">
+            <figure className="links-tab__item--icon-wrap">
               <Image
                 src={item.icon}
                 alt={item.title}
@@ -36,9 +36,9 @@ const LinksTab = () => {
                 loading="lazy"
                 title={item.title}
               />
-            </a>
-          </figure>
-          <p className="links-tab__item--title">{item.title}</p>
+            </figure>
+            <p className="links-tab__item--title">{item.title}</p>
+          </a>
         </motion.li>
       ))}
     </motion.ul>

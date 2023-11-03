@@ -90,7 +90,7 @@ const AboutMe = () => {
                   <Image
                     className="about-me__item--icon"
                     src={item.icon}
-                    alt={item.title}
+                    alt={item.alt}
                     fill={true}
                     title={item.title}
                     loading="lazy"

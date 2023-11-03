@@ -3,6 +3,7 @@
 .about-me {
   background-color: #0c0c1d;
   height: 100vh;
+  padding-bottom: 32px;
 
   @include mobile {
     height: calc(100vh - 50px);
