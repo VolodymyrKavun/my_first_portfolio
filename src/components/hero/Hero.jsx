@@ -32,7 +32,7 @@ const textVariants = {
 const Hero = () => {
   return (
     <section id="home" className="hero">
-      <motion.div
+      <motion.article
         className="hero__text--container"
         variants={textVariants}
         initial="initial"
@@ -63,7 +63,7 @@ const Hero = () => {
             />
           </Link>
         </motion.figure>
-      </motion.div>
+      </motion.article>
 
       <figure className="hero__img-container">
         <a

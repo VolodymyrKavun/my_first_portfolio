@@ -8,14 +8,11 @@ const SingleSection = ({ item }) => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    // offset: ["start start", "end start"],
   });
 
-  // const y = useTransform(scrollYProgress, [0, 1], ["0%", "-300%"]);
   const y = useTransform(scrollYProgress, [0, 1], [-100, 100]);
 
   return (
-    // <section>
     <article className="single-section">
       <figure className="single-section__wrapper-img" ref={ref}>
         <Image
@@ -70,7 +67,6 @@ const SingleSection = ({ item }) => {
         </figure>
       </motion.div>
     </article>
-    // </section>
   );
 };
 

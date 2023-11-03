@@ -10,7 +10,8 @@
   height: 100%;
 
   .nav-links__item {
-    font-size: clamp(12px, 3vw, 24px);
+    font-size: clamp(0.75rem, 0.409rem + 1.705vw, 1.5rem);
+    color: var(--second-color);
 
     // @include mobile {
     // font-size: 12px;
