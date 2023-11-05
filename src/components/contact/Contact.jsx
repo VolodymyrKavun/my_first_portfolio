@@ -105,7 +105,7 @@ const Contact = () => {
           className="contact__text--icon-wrapper"
         >
           <Image
-            src={"/scroll.png"}
+            src={"/scroll.webp"}
             alt="Look to the right"
             fill={true}
             className="contact__text--icon"

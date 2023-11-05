@@ -54,7 +54,7 @@ const Hero = () => {
         >
           <Link href="#aboutMe">
             <Image
-              src={"/scroll.png"}
+              src={"/scroll.webp"}
               alt="Scroll down"
               fill={true}
               className="hero__scroll-icon--img"
