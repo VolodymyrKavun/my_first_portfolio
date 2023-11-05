@@ -2,10 +2,11 @@
 import "./contact.scss";
 import { motion } from "framer-motion";
 // import { contactData } from "@/data/contact.data";
-// import { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import { showError, showSuccess } from "@/utils/toast/ToastMessage";
+import { useState } from "react";
 
 const variants = {
   // initial: {
@@ -34,9 +35,12 @@ const variants = {
 
 const Contact = () => {
   // const contactRef = useRef();
-  // const formRef = useRef();
+  const formRef = useRef();
   // const [error, setError] = useState(false);
   // const [success, setSuccess] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   // const isInView = useInView(ref, { margin: "-100px" });
 
@@ -56,7 +60,7 @@ const Contact = () => {
         (result) => {
           // setSuccess(true);
           showSuccess(`Success! ${result.text}`);
-          form.reset();
+          handleReset();
           // console.log(result.text);
         },
         (error) => {
@@ -66,6 +70,12 @@ const Contact = () => {
         }
       );
   };
+
+  function handleReset() {
+    setName("");
+    setEmail("");
+    setMessage("");
+  }
 
   return (
     <section
@@ -108,7 +118,7 @@ const Contact = () => {
       {/* <article className="contact__form-container"> */}
       <motion.form
         className="contact__form"
-        // ref={formRef}
+        ref={formRef}
         onSubmit={sendEmail}
         // variants={variants}
         // initial={{ opacity: 0 }}
@@ -121,6 +131,8 @@ const Contact = () => {
           placeholder="Name"
           name="name"
           className="contact__form--contact"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
         <input
           type="email"
@@ -128,12 +140,16 @@ const Contact = () => {
           placeholder="Email"
           name="email"
           className="contact__form--contact"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           rows={8}
           placeholder="Message"
           name="message"
           className="contact__form--textarea"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <button className="contact__form--button" aria-label="Submit form">
           Submit
