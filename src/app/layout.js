@@ -107,6 +107,9 @@ export const metadata = {
   referrer: "origin-when-cross-origin",
   creator: "Volodymyr Kavun",
   publisher: "Volodymyr Kavun",
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SC,
+  },
   robots: {
     index: true,
     follow: true,
