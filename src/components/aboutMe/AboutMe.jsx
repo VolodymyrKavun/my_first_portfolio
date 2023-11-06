@@ -84,6 +84,17 @@ const AboutMe = () => {
           >
             My skills
           </motion.h4>
+          <figure className="about-me__skills--img-wrapper">
+            <Image
+              src={"/my-photo.webp"}
+              alt="Working team"
+              fill={true}
+              className="about-me__skills--img"
+              loading="lazy"
+              title="Working team"
+              sizes="(min-width: 1040px) 300px, (min-width: 780px) 250px, 200px"
+            />
+          </figure>
           <ul className="about-me__skills--list">
             {aboutMeData.map((item) => (
               <li key={item.id} className="about-me__skills--item">
