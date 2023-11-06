@@ -29,10 +29,10 @@ export const metadata = {
   themeColor: "#0c0c1d",
   icons: {
     icon: [
-      { url: "/favicon-192x192.png" },
-      new URL("/favicon-192x192.png", process.env.BASE_URL),
+      { url: "/favicon-color-192x192.png" },
+      new URL("/favicon-color-192x192.png", process.env.BASE_URL),
     ],
-    shortcut: ["/shortcut-icon.png"],
+    shortcut: ["/apple-touch-icon.png"],
     apple: [
       { url: "/apple-icon.png" },
       { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
@@ -72,6 +72,7 @@ export const metadata = {
     siteName: "Volodymyr Kavun Portfolio",
     images: [
       {
+        // url: "/opengraph-image-400x300.png",
         url: "/opengraph-image-400x300.png",
         type: "image/png",
         width: 400,
@@ -79,14 +80,18 @@ export const metadata = {
         alt: "Volodymyr Kavun",
       },
       {
+        // url: "/twitter-image-800x600.png",
         url: "/twitter-image-800x600.png",
+
         type: "image/png",
         width: 800,
         height: 600,
         alt: "Volodymyr Kavun",
       },
       {
+        // url: "/opengraph-image-1200-630.png",
         url: "/opengraph-image-1200-630.png",
+
         type: "image/png",
         width: 1200,
         height: 630,

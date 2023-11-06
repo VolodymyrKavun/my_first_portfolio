@@ -96,7 +96,8 @@ const Navbar = () => {
     <header className="navbar">
       <Link href="/" className="navbar__logo--wrapper" title="Link to Home">
         <Image
-          src={"/logo-no-background.svg"}
+          // src={"/logo-no-background.svg"}
+          src={"/logo-transparent.svg"}
           alt="Logo"
           fill={true}
           title="Logo"

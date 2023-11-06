@@ -17,7 +17,7 @@
   -ms-flex-align: center;
   align-items: center;
 
-  height: 70px;
+  height: 72px;
   position: fixed;
   gap: 32px;
   z-index: 10;
@@ -31,12 +31,12 @@
     justify-content: center;
 
     position: relative;
-    height: 50px;
+    height: 48px;
   }
 
   @include tablet {
     padding: 0px 24px;
-    height: 70px;
+    height: 72px;
   }
 
   @include desktopSmall {
@@ -45,17 +45,17 @@
 
   .navbar__logo--wrapper {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 48px;
+    height: 48px;
 
     @include mobile {
-      width: 70px;
-      height: 70px;
+      width: 32px;
+      height: 32px;
     }
 
     @include tablet {
-      width: 70px;
-      height: 70px;
+      width: 32px;
+      height: 32px;
     }
   }
 }
