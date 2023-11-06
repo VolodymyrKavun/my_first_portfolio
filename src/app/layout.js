@@ -64,6 +64,7 @@ export const metadata = {
     //   },
     // ],
   },
+  manifest: `${process.env.BASE_URL}site.webmanifest`,
   openGraph: {
     title: "Volodymyr Kavun Portfolio",
     description:
@@ -72,7 +73,6 @@ export const metadata = {
     siteName: "Volodymyr Kavun Portfolio",
     images: [
       {
-        // url: "/opengraph-image-400x300.png",
         url: "/opengraph-image-400x300.png",
         type: "image/png",
         width: 400,
@@ -80,7 +80,6 @@ export const metadata = {
         alt: "Volodymyr Kavun",
       },
       {
-        // url: "/twitter-image-800x600.png",
         url: "/twitter-image-800x600.png",
 
         type: "image/png",
@@ -89,7 +88,6 @@ export const metadata = {
         alt: "Volodymyr Kavun",
       },
       {
-        // url: "/opengraph-image-1200-630.png",
         url: "/opengraph-image-1200-630.png",
 
         type: "image/png",

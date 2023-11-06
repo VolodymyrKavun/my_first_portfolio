@@ -81,7 +81,6 @@ const Hero = () => {
           src={"/hero-image.webp"}
           alt="Hero image"
           fill={true}
-          // loading="lazy"
           title="Image hero"
           sizes="(min-width: 780px) 411px, 320px"
           priority={true}

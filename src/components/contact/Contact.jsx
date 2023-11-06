@@ -1,7 +1,6 @@
 "use client";
 import "./contact.scss";
 import { motion } from "framer-motion";
-// import { contactData } from "@/data/contact.data";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
@@ -9,19 +8,8 @@ import { showError, showSuccess } from "@/utils/toast/ToastMessage";
 import { useState } from "react";
 
 const variants = {
-  // initial: {
-  // x: -500,
-  // y: 500,
-  // opacity: 0,
-  // },
   animate: {
     x: 0,
-    // y: 0,
-    // opacity: 1,
-    // transition: {
-    //   duration: 0.5,
-    //   staggerChildren: 0.1,
-    // },
   },
   scrollButton: {
     opacity: 0,
@@ -34,15 +22,10 @@ const variants = {
 };
 
 const Contact = () => {
-  // const contactRef = useRef();
   const formRef = useRef();
-  // const [error, setError] = useState(false);
-  // const [success, setSuccess] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  // const isInView = useInView(ref, { margin: "-100px" });
 
   // ! function sending message
 
@@ -58,15 +41,11 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          // setSuccess(true);
           showSuccess(`Success! ${result.text}`);
           handleReset();
-          // console.log(result.text);
         },
         (error) => {
-          // setError(true);
           showError(`Something wrong. ${error.text}`);
-          // console.log(error.text);
         }
       );
   };
@@ -78,27 +57,9 @@ const Contact = () => {
   }
 
   return (
-    <section
-      id="contact"
-      // ref={contactRef}
-      className="contact"
-      // variants={variants}
-      // initial="initial"
-      // whileInView="animate"
-    >
-      <article
-        // variants={variants}
-
-        className="contact__text--container"
-      >
-        <h6
-          // variants={variants}
-
-          className="contact__text--title"
-        >
-          Write to me
-          {/* You can fill out the feedback form */}
-        </h6>
+    <section id="contact" className="contact">
+      <article className="contact__text--container">
+        <h6 className="contact__text--title">Write to me</h6>
         <motion.figure
           variants={variants}
           animate="scrollButton"
@@ -115,16 +76,7 @@ const Contact = () => {
           />
         </motion.figure>
       </article>
-      {/* <article className="contact__form-container"> */}
-      <motion.form
-        className="contact__form"
-        ref={formRef}
-        onSubmit={sendEmail}
-        // variants={variants}
-        // initial={{ opacity: 0 }}
-        // whileInView={{ opacity: 1 }}
-        // transition={{ delay: 4, duration: 1 }}
-      >
+      <motion.form className="contact__form" ref={formRef} onSubmit={sendEmail}>
         <input
           type="text"
           required
@@ -155,7 +107,6 @@ const Contact = () => {
           Submit
         </button>
       </motion.form>
-      {/* </article> */}
     </section>
   );
 };

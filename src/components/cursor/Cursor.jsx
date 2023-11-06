@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 
 const Cursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  // console.log("🚀 ~ position:", position);
 
   useEffect(() => {
     const mouseMove = (e) => {

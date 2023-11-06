@@ -3,10 +3,6 @@
 .navbar {
   max-width: 1024px;
   margin: auto;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // !WK
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,11 +17,8 @@
   position: fixed;
   gap: 32px;
   z-index: 10;
-  // mix-blend-mode: difference;
 
   @include mobile {
-    // justify-content: center;
-    // !Wk
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;

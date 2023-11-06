@@ -3,35 +3,10 @@ import { navData } from "@/data/navigation.data";
 import { motion } from "framer-motion";
 import "./navLinks.scss";
 
-// const variants = {
-//   open: {
-//     transition: {
-//       staggerChildren: 0.1,
-//     },
-//   },
-//   closed: {
-//     transition: {
-//       staggerChildren: 0.05,
-//       staggerDirection: -1,
-//     },
-//   },
-// };
-
 const socialsVariants = {
   visible: (index) => ({ opacity: 1, transition: { delay: index * 0.2 } }),
   hidden: { opacity: 0 },
 };
-
-// const itemVariants = {
-//   open: {
-//     // y: 0,
-//     opacity: 1,
-//   },
-//   closed: {
-//     // y: 50,
-//     opacity: 0,
-//   },
-// };
 
 const NavLinks = () => {
   return (

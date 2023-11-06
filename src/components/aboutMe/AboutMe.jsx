@@ -32,9 +32,7 @@ const AboutMe = () => {
       className="about-me"
       variants={variants}
       initial="initial"
-      // whileInView="animate"
       ref={ref}
-      // animate={isInView ? "animate" : "initial"}
       animate={isInView && "animate"}
     >
       <motion.article className="about-me__expression" variants={variants}>

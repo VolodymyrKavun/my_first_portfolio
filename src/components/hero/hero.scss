@@ -1,27 +1,6 @@
 @import "@/app/_mixins.scss";
 
-// section {
-//   background: linear-gradient(
-//     180deg,
-//     var(--main-bg-color),
-//     var(--main-bg-color)
-//   );
-// }
-
 .hero {
-  // background: linear-gradient(
-  //   180deg,
-  //   var(--main-bg-color),
-  //   var(--main-bg-color)
-  // );
-  // height: 100vh;
-  // overflow: hidden;
-  // display: flex;
-  // align-items: center;
-  // max-width: 1024px;
-  // margin: auto;
-  // ! WK
-
   background: -webkit-gradient(
     linear,
     left top,
@@ -51,11 +30,6 @@
   margin: auto;
 
   @include mobile {
-    // height: calc(100vh - 100px);
-    // flex-direction: column;
-    // padding-bottom: 8px;
-
-    // ! WK
     height: calc(100vh - 100px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -65,14 +39,6 @@
   }
 
   .hero__text--container {
-    // width: 100%;
-    // height: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // gap: 32px;
-
-    // ! WK
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -90,11 +56,6 @@
     @include mobile {
       width: 100%;
       height: 100%;
-      // gap: 32px;
-      // align-items: center;
-      // text-align: center;
-
-      // !WK
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
@@ -140,11 +101,6 @@
   }
 
   .hero__img-container {
-    // position: relative;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // !WK
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -155,13 +111,11 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    // height: 100%;
     width: 700px;
     height: 550px;
 
     @include mobile {
       width: 320px;
-      // height: 300px;
     }
 
     .hero__img-container--btn-resume {

@@ -1,0 +1,61 @@
+{
+  "name": "Volodymyr Kavun Portfolio",
+  "short_name": "Volodymyr Kavun",
+  "description": "Portfolio of front-end developer Volodymyr Kavun. Next.js, React. Web developer SEO",
+  "orientation": "natural",
+  "protocol_handlers": [
+    {
+      "protocol": "web+mail",
+      "url": "/volodymirkavun1@gmail.com?type=%s"
+    },
+    {
+      "protocol": "web+phone",
+      "url": "/+420730113790?type=%s"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon-color-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-color-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-color-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "display_override": ["window-control-overlay", "minimal-ui"],
+  "display": "standalone",
+  "id": "/",
+  "start_url": "/",
+  "theme_color": "#0c0c1d",
+  "background_color": "#0c0c1d",
+  "scope": "/"
+}
