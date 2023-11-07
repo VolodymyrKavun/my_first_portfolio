@@ -13,6 +13,22 @@
       "url": "/+420730113790?type=%s"
     }
   ],
+  "screenshots": [
+    {
+      "src": "/screenshot_mobile.webp",
+      "sizes": "360x720",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Homescreen mobile of Volodymyr Kavun Portfolio App"
+    },
+    {
+      "src": "/screenshot_desktop.webp",
+      "sizes": "1920x851",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Homescreen desktop of Volodymyr Kavun Portfolio App"
+    }
+  ],
   "icons": [
     {
       "src": "/favicon-color-16x16.png",
@@ -51,22 +67,7 @@
       "purpose": "any"
     }
   ],
-  "screenshots": [
-    {
-      "src": "/screenshot_mobile.webp",
-      "sizes": "360x720",
-      "type": "image/webp",
-      "form_factor": "narrow",
-      "label": "Homescreen mobile of Volodymyr Kavun Portfolio App"
-    },
-    {
-      "src": "/screenshot_desktop.webp",
-      "sizes": "1920x851",
-      "type": "image/webp",
-      "form_factor": "wide",
-      "label": "Homescreen desktop of Volodymyr Kavun Portfolio App"
-    }
-  ],
+
   "display_override": ["window-control-overlay", "minimal-ui"],
   "display": "standalone",
   "id": "/",
