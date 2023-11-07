@@ -20,18 +20,6 @@ export const socialItems = [
   },
   {
     id: 4,
-    url: "https://instagram.com/___volod_mir___?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr",
-    icon: "/social_icons/icon_instagram.svg",
-    alt: "Link to the Instagram",
-  },
-  {
-    id: 5,
-    url: "https://www.facebook.com/profile.php?id=100020119037264",
-    icon: "/social_icons/icon_facebook.svg",
-    alt: "Link to the Facebook",
-  },
-  {
-    id: 6,
     url: "mailto:volodymirkavun1@gmail.com",
     icon: "/social_icons/icon_gmail.svg",
     alt: "Link to the Gmail",
