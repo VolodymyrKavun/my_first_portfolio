@@ -122,9 +122,31 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "http://www.schema.org",
+    "@type": "person",
+    name: "Volodymyr Kavun",
+    jobTitle: "front-end developer",
+    gender: "male",
+    url: "https://v-k-front-end-developer.vercel.app/",
+    image: "https://v-k-front-end-developer.vercel.app/favicon-color-16x16.png",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Karvina",
+      addressRegion: "Czech Republic",
+    },
+    email: "volodymirkavun1@gmail.com",
+    alumniOf: "GOIT School",
+    birthPlace: "Ukraine",
+    nationality: "Ukrainian",
+  };
   return (
     <html lang="en">
       <body className={inter.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <main>{children}</main>
         <BackToTop />
         <ToastComponent />
