@@ -18,7 +18,7 @@
       "src": "/screenshot_mobile.webp",
       "sizes": "360x720",
       "type": "image/webp",
-      "form_factor": "wide",
+      "form_factor": "narrow",
       "label": "Homescreen mobile of Volodymyr Kavun Portfolio App"
     },
     {
