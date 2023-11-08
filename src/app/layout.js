@@ -81,7 +81,6 @@ export const metadata = {
       },
       {
         url: "/twitter-image-800x600.png",
-
         type: "image/png",
         width: 800,
         height: 600,
@@ -89,7 +88,6 @@ export const metadata = {
       },
       {
         url: "/opengraph-image-1200-630.png",
-
         type: "image/png",
         width: 1200,
         height: 630,
@@ -99,6 +97,22 @@ export const metadata = {
     locale: "en_GB",
     type: "website",
   },
+  appLinks: {
+    ios: {
+      url: process.env.BASE_URL,
+      app_name: "Volodymyr_Kavun_Portfolio",
+    },
+    android: {
+      url: process.env.BASE_URL,
+      package: process.env.BASE_URL,
+      app_name: "Volodymyr_Kavun_Portfolio",
+    },
+    web: {
+      url: process.env.BASE_URL,
+      should_fallback: true,
+    },
+  },
+  assets: [process.env.BASE_URL],
   author: "Volodymyr Kavun",
   generator: "Volodymyr Kavun",
   applicationName: "Volodymyr Kavun Portfolio",
@@ -129,7 +143,11 @@ export default function RootLayout({ children }) {
     jobTitle: "front-end developer",
     gender: "male",
     url: "https://v-k-front-end-developer.vercel.app/",
-    image: "https://v-k-front-end-developer.vercel.app/favicon-color-16x16.png",
+    image: [
+      "https://v-k-front-end-developer.vercel.app/favicon-color-16x16.png",
+      "https://v-k-front-end-developer.vercel.app/favicon-color-32x32.png",
+      "https://v-k-front-end-developer.vercel.app/favicon-color-48x48.png",
+    ],
     address: {
       "@type": "PostalAddress",
       addressLocality: "Karvina",
