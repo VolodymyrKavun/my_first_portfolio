@@ -2,6 +2,8 @@ import BackToTop from "@/components/backToTop/BackToTop";
 import "./globals.scss";
 import { Inter } from "next/font/google";
 import ToastComponent from "@/utils/toast/ToastComponent";
+import dynamic from "next/dynamic";
+const DynamicGoogleAnalytics = dynamic(() => import("./GoogleAnalitics.jsx"));
 
 const inter = Inter({
   subsets: ["latin"],
@@ -179,6 +181,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <DynamicGoogleAnalytics />
         <main>{children}</main>
         <BackToTop />
         <ToastComponent />
