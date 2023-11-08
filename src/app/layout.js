@@ -3,7 +3,7 @@ import "./globals.scss";
 import { Inter } from "next/font/google";
 import ToastComponent from "@/utils/toast/ToastComponent";
 import dynamic from "next/dynamic";
-const DynamicGoogleAnalytics = dynamic(() => import("./GoogleAnalitics.jsx"));
+const DynamicGoogleAnalytics = dynamic(() => import("./analytics.js"));
 
 const inter = Inter({
   subsets: ["latin"],
