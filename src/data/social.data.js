@@ -24,4 +24,10 @@ export const socialItems = [
     icon: "/social_icons/icon_gmail.svg",
     alt: "Link to the Gmail",
   },
+  {
+    id: 5,
+    url: "viber://chat?number=%2B380636876176",
+    icon: "/social_icons/icon_viber.svg",
+    alt: "Link to the Viber",
+  },
 ];
