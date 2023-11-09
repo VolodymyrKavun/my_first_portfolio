@@ -14,6 +14,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: var(--main-bg-color);
   color: var(--main-color);
@@ -23,6 +24,7 @@ body {
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   outline: none;
   margin: 0;
@@ -58,6 +60,14 @@ button {
 }
 
 ::-webkit-scrollbar-track {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    color-stop(var(--main-color)),
+    to(var(--main-bg-color))
+  );
   background: linear-gradient(
     transparent,
     var(--main-color),
@@ -66,6 +76,13 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--main-bg-color)),
+    to(rgba(192, 215, 244, 0.5))
+  );
   background: linear-gradient(
     to bottom,
     var(--main-bg-color),
