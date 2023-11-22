@@ -153,8 +153,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const jsonLd = {
-    "@context": "http://www.schema.org",
-    "@type": "person",
+    "@context": "https://www.schema.org/Person",
+    "@type": "Person",
     name: "Volodymyr Kavun",
     jobTitle: "front-end developer",
     gender: "male",
