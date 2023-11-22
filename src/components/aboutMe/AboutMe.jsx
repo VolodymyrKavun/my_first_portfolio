@@ -50,18 +50,20 @@ const AboutMe = () => {
             className="about-me__info-container--title"
             whileHover={{ color: "var(--second-color)" }}
           >
-            Like working in a team!
+            I love working in a team!
           </motion.h4>
           <p className="about-me__info-container--text">
-            ⚡ In addition to working on projects, I always strive to improve my
-            skills and stay updated with the latest trends in web development. I
-            believe that continuous learning is the key to success in this
-            field.
+            ⚡ Beyond project commitments, I am dedicated to enhancing my skills
+            and staying abreast of the latest trends in web development. I
+            firmly believe that continuous learning is the cornerstone of
+            success in this dynamic field.
           </p>
           <p className="about-me__info-container--text">
-            ⚡ I enjoy creating visually appealing and functional web
-            applications that provide the best user experience. I can work in a
-            team and am always open to learning new technologies and approaches.
+            ⚡ I take pleasure in crafting visually captivating and functional
+            web applications that prioritize the optimal user experience. My
+            ability to work seamlessly within a team, coupled with a perpetual
+            openness to embracing new technologies and approaches, drives my
+            passion for excellence.
           </p>
           <figure className="about-me__info-container--img-wrapper">
             <Image
