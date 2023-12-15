@@ -11,6 +11,8 @@ const socialsVariants = {
 const NavLinks = () => {
   return (
     <motion.ul
+      itemScope
+      itemType="http://schema.org/SiteNavigationElement"
       className="nav-links__list"
       variants={socialsVariants}
       initial="hidden"
@@ -25,7 +27,7 @@ const NavLinks = () => {
           whileTap={{ scale: 0.9 }}
           className="nav-links__item"
         >
-          <a href={`#${item.link}`} title={item.alt}>
+          <a itemProp="url" href={`#${item.link}`} title={item.alt}>
             {item.title}
           </a>
         </motion.li>

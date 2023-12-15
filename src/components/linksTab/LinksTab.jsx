@@ -12,6 +12,8 @@ const socialsVariants = {
 const LinksTab = () => {
   return (
     <motion.ul
+      itemScope
+      itemType="http://schema.org/SiteNavigationElement"
       className="links-tab"
       initial="hidden"
       animate="visible"
@@ -27,6 +29,7 @@ const LinksTab = () => {
           whileTap={{ scale: 0.9 }}
         >
           <a
+            itemProp="url"
             href={`#${item.link}`}
             className="links-tab__item--link"
             title={item.alt}
