@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import { showError, showSuccess } from "@/utils/toast/ToastMessage";
 import { useState } from "react";
+import { sendGTMEvent } from '@next/third-parties/google'
 
 const variants = {
   animate: {
@@ -103,7 +104,7 @@ const Contact = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <button className="contact__form--button" aria-label="Submit form">
+        <button className="contact__form--button" aria-label="Submit form" onClick={() => sendGTMEvent('event', 'buttonClicked', { value: 'xyz' })}>
           Submit
         </button>
       </motion.form>
